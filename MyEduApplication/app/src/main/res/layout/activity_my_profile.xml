@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Greeting Text -->
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Hi, [Name]"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp" />
+
+    <!-- Motivational Quote -->
+    <TextView
+        android:id="@+id/motivationalQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greetingText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:text="Your motivational quote will appear here."
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:textStyle="italic"
+        android:textColor="#5D4037" />
+
+    <!-- Avatar Image -->
+    <ImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/motivationalQuote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/avatar_default1" />
+
+    <!-- Favorite Categories -->
+    <TextView
+        android:id="@+id/favoriteCategoriesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatarImage"
+        android:layout_centerHorizontal="true"
+        android:text="Favorite Categories"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+
+    <!-- Category Count Texts -->
+    <TextView
+        android:id="@+id/scienceCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/favoriteCategoriesText"
+        android:layout_centerHorizontal="true"
+        android:text="Science: 0 times"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/mathCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scienceCount"
+        android:layout_centerHorizontal="true"
+        android:text="Math: 0 times"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/geographyCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mathCount"
+        android:layout_centerHorizontal="true"
+        android:text="Geography: 0 times"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/englishCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/geographyCount"
+        android:layout_centerHorizontal="true"
+        android:text="English: 0 times"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- View Progress Button -->
+    <Button
+        android:id="@+id/viewProgressButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/englishCount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="View Progress"
+        android:textSize="18sp"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="10dp" />
+
+    <!-- Reset Scores Button -->
+    <Button
+        android:id="@+id/resetScoresButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewProgressButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Reset Scores"
+        android:textSize="18sp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="10dp" />
+
+</RelativeLayout>

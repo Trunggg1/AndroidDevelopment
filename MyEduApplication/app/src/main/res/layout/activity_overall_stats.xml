@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/scienceStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Science - Highest: 0 | Latest: 0"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginTop="96dp" />
+
+    <TextView
+        android:id="@+id/mathStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scienceStats"
+        android:layout_centerHorizontal="true"
+        android:text="Math - Highest: 0 | Latest: 0"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/geographyStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mathStats"
+        android:layout_centerHorizontal="true"
+        android:text="Geography - Highest: 0 | Latest: 0"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/englishStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/geographyStats"
+        android:layout_centerHorizontal="true"
+        android:text="English - Highest: 0 | Latest: 0"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+</RelativeLayout>

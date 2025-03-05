@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Animated Background Color (Instagram-like gradient) -->
+    <RelativeLayout
+        android:id="@+id/animatedBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/animated_gradient_background" />
+
+    <!-- Fireworks Icons with Animations, Bigger and Scattered -->
+    <ImageView
+        android:id="@+id/firework1"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="30dp"
+        android:src="@drawable/firework" />
+
+    <ImageView
+        android:id="@+id/firework2"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/firework" />
+
+    <ImageView
+        android:id="@+id/firework3"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/scoreText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/firework" />
+
+    <ImageView
+        android:id="@+id/firework4"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/scoreText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/firework" />
+
+    <ImageView
+        android:id="@+id/firework5"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/firework" />
+
+    <ImageView
+        android:id="@+id/firework6"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/firework" />
+
+    <!-- Score Circle -->
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_background"
+        android:gravity="center"
+        android:text="0 / 7"
+        android:textSize="40sp"
+        android:textColor="@android:color/white" />
+
+    <!-- Correct Answer Text -->
+    <TextView
+        android:id="@+id/correctAnswerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Correct Answer"
+        android:textSize="20sp"
+        android:textColor="@android:color/white" />
+
+    <!-- Home Button -->
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/correctAnswerText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Home"
+        android:backgroundTint="@android:color/holo_purple"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+  <!-- Timer TextView -->
+  <TextView
+      android:id="@+id/timerText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Time: 30s"
+      android:textSize="20sp"
+      android:textColor="#FF0000"
+      android:layout_gravity="center_horizontal" />
+
+  <!-- Question TextView -->
+  <TextView
+      android:id="@+id/questionText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Question"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:gravity="center" />
+
+  <!-- Score TextView -->
+  <TextView
+      android:id="@+id/scoreText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Score: 0"
+      android:layout_marginTop="16dp"
+      android:textSize="18sp" />
+
+  <!-- Option A Button -->
+  <Button
+      android:id="@+id/optionA"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:padding="12dp"
+      android:text="A"
+      android:textSize="18sp"
+      android:backgroundTint="#4CAF50" />
+
+  <!-- Option B Button -->
+  <Button
+      android:id="@+id/optionB"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:padding="12dp"
+      android:text="B"
+      android:textSize="18sp"
+      android:backgroundTint="#4CAF50" />
+
+  <!-- Option C Button -->
+  <Button
+      android:id="@+id/optionC"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:padding="12dp"
+      android:text="C"
+      android:textSize="18sp"
+      android:backgroundTint="#4CAF50" />
+
+  <!-- Option D Button -->
+  <Button
+      android:id="@+id/optionD"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:padding="12dp"
+      android:text="D"
+      android:textSize="18sp"
+      android:backgroundTint="#4CAF50" />
+
+</LinearLayout>
